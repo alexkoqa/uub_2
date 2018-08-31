@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>Test task #2 from UUB</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/sass.css">
+		<!-- Подключение шрифтов -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+		</script> -->
+
+	</head>
+
+	<body>
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="col">
+					
+					<div class="form-block">
+						
+						<form name="form1" >
+							<div class="form-block_title">
+								<h1>форма</h1>
+							</div>
+							<p>Имя</p>
+							<input type="text" autofocus=""> <br>
+							<p>Отчество</p>
+							<input type="text"> <br>
+							<p>Фамилия</p>
+							<input type="text" ><br>
+							<p>Дата отправки</p>
+							<input type="date"><br>
+							<p>Дата прибытия</p>
+							<input type="date"><br>
+							<p>Расстояние (км)</p>
+							<input type="number" name="userF"><br>
+							<p>Стоимость за 1км</p>
+							<input type="number" name="userI"><br>
+							<span>Доставка:</span>
+							<input type="checkbox" class="checkbox-class">
+							<br>
+								<div class="select">
+									<span class="float_left">Адресная доставка:</span><br>
+										<input type="checkbox" class="checkbox-class_2" name="userO">
+									
+									<span class="float_left">Доставка на отделение:</span><br>
+										<input type="checkbox" class="checkbox-class_3">
+								</div>
+							
+							<!-- новая кнопка -->
+							<input type="button" class="button" name="button" value="Расчитать" onClick="newPage()">
+							<!-- новая кнопка -->
+							
+							<!-- <button><a href="file:///D:/It/My_projects/uub_2/src/page_second.html" class="link">Расчитать</a></button> -->
+
+							<p>Очистить поля</p>
+							<!-- <input type="reset" class="color-reset"><br> -->
+							
+							<button class="button1">
+							<a href="loadFormFIO.html" class="button1 button1_reloud" >Сбросить</a>
+							</button>
+						</form>
+					</div>
+					<!-- /.form-block -->
+				</div>
+				<!-- /.col-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/menu.js"></script>
+
+
+<script language="JavaScript">
+		function newPage()
+		{
+		 value1=""+document.form1.userF.value;
+		 value2=""+document.form1.userI.value;
+		 value3=""+document.form1.userO.value;
+		 self.location="greetingFIO.html?="+value1+"="+value2+"="+value3;
+		}
+		
+		</script>
+
+	</body>
+</html>
