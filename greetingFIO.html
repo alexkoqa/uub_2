@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>Test task #2 from UUB</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/sass.css">
+		<!-- Подключение шрифтов -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+
+	<body>
+		<div class="style_page2">
+			<script language="JavaScript">
+			
+			userName = ""+ document.location;
+			n1 = userName.indexOf("=")+1;
+			userName= userName.substring(n1);
+			n1= userName.indexOf("=")+1;
+			userF=userName.substr(0,n1-1);
+
+			userName= userName.substring(n1);
+			
+			n1= userName.indexOf("=")+1;
+			
+			userI=userName.substr(0,n1-1);
+
+			userO= userName.substring(n1);
+
+			document.write("Стоимость доставки: " + userF * userI + " грн");
+			document.close();
+			
+			</script>
+		</div>
+
+	</body>
+</html>
